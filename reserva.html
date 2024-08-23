@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+</head>
+<body>
+    <section>
+        <h2>Reserve sua viagem</h2>
+        <p>conheça nossas Taxas e serviços</p>
+         <form action="GET"></form>
+            <fieldset>
+                
+                <legend>dados da viagem</legend>
+                
+                <label for="">Nome:</label><br>
+                <input type="text" name="name"><br>
+
+                <label for="">email:</label><br>
+                <input type="text" name="email"><br>
+                <br><br>
+                
+                <label>Escolha seu destino:<label><br>
+                
+                <label for="">
+                    <input type="radio" name="Destino" value="RJ">RIO DE JANEIRO, RJ
+                </label><br>
+                <label for="">
+                    <input type="radio" name="Destino" value="BUENOS">BUENOS AIRES, ARGENTINA
+                </label><br>
+                <label for="">
+                    <input type="radio" name="Destino" value="NY">NEW YORK, NY
+                </label> 
+                <br><br>
+
+                <label for="">Quantidade de Pessoas:</label> <br>
+                <input type="number" name="qtdPessoas">
+                <br><br>
+
+                <label>Data de ida:</label><br>
+                <input type="date" name="dataIda" id=""><br>
+                <br>    
+                <br>
+                <label for="">Data de volta:</label><br>
+                <input type="date" name="dataDeVolta:"><br>
+
+            </fieldset>
+            
+            <fieldset>
+                <legend>Quais serviços deseja contratar?</legend>
+            
+                <label><br>
+                    <input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+                </label>
+                <label>
+                    <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
+                </label>
+                <label>
+                    <br><input type="checkbox" name="veiculos" id="veiculo">Reserva de veiculos
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Formas de pagameto:</legend>
+                <label for="">
+                    <input type="radio" name="formaPagameto" value="Credito">Credito
+                </label><br>
+                <label for="">
+                    <input type="radio" name="formaPagameto" value="Debito">Debito
+                </label><br>
+                <label for="">
+                    <input type="radio" name="formaPagameto" value="Pix">PIX
+                </label> 
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o prazo para pagamento</legend>
+                
+                <select name="prazoPagamento">
+                    <option value="aVista" selected>À VISTA</option>
+                    <option value="2x" selected>2x sem juros</option>
+                    <option value="6x">6x sem juros</option>
+                    <option value="10x">10x com juros</option>
+                    <option value="12x" selected>12x com juros</option>
+                </select>
+            </fieldset>
+            
+            <br><label for>observações extras</label><br>
+            <textarea rows="5" name="cometario"></textarea><br><br>
+        
+            <button>Salvar</button>
+        </form>
+    </section>
+    
+    <br>
+    
+  
+    <hr>
+    <footer><!--RODAPÉ-->
+        <p>Desenvolvido por Bernardo Maggessi Garcêz</p>
+    </footer>
+</body>
